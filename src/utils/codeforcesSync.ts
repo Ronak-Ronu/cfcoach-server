@@ -77,7 +77,7 @@ export const syncCodeforcesData = async (studentId?: string) => {
 };
 
 // Test mode: Every minute
-let cronTime = '* * * * *'; // Revert to '0 0 2 * * *' for daily 2 AM UTC
+let cronTime = '0 0 2 * * *'; // Revert to '0 0 2 * * *' for daily 2 AM UTC
 let scheduledTask: ScheduledTask | null = null;
 
 export const startCodeforcesSyncJob = () => {
